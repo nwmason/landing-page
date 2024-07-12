@@ -104,9 +104,11 @@ idk man it works i guess
     border-radius: 8px;
     box-shadow: 6px 6px 6px #00000066;
     color: #f2f4f1;
-    width: 128px;
+    width: 164px;
+    height: 64px;
     padding: 8px 16px;
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .content-main-image {
@@ -147,7 +149,7 @@ idk man it works i guess
     height: 280px;
     border: solid 4px #e08e5d;
     border-radius: 64px;
-    box-shadow: 0px 4px 4px 4px #00000022;
+    box-shadow: 0px 4px 4px 4px #302d2e33;
     flex: none;
 }
 
@@ -169,17 +171,75 @@ idk man it works i guess
 }
 
 .quote-text {
-    color: #1F2937;
+    color: #302d2ecc;
     font-size: 36px;
     align-self: flex-start;
 }
 
 .quote-author {
-    color: black;
+    color: #302d2e;
     font-size: 24px;
     align-self: flex-end;
 }
 
-.container-action {
+.container-bottom {
     background-color: #f2f4f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 64px;
+}
+
+.container-action {
+    background-color: #da5653;
+    border-radius: 12px;
+    color: #E5E7EB;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 740px;
+    height: 132px;
+    padding: 48px 164px;
+}
+
+.container-action-text {
+    flex: display;
+    flex-direction: column;
+    width: 360px;
+    gap: 12px;
+}
+
+.action-title {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.action-text {
+    font-size: 16px;
+}
+
+.action-button {
+    background-color: #da5653;
+    border: 2px solid #E5E7EB;
+    border-radius: 12px;
+    color: #E5E7EB;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 4px 6px 0 #302d2e44;
+    height: 64px;
+    width: 196px;
+    padding: 12px;
+}
+
+.footer {
+    background-color: #302d2e;
+    color: #E5E7EB;
+    text-align: center;
+    height: 196px;
+    width: auto;
+    padding-top: 12px;
+    padding-bottom: 32px;
+    flex: auto;
 }
