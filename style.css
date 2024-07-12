@@ -1,10 +1,11 @@
 /* Colors and font styles
 
-dark bg:        #302d2e
-dark accent:    #b09070
-main color:     #da5653
-light accent:   #e08e5d
-whites:         #f2f4f1
+dark bg:        --------    #302d2e
+dark accent:    --------    #b09070
+main color:     --------    #da5653
+light accent:   --------    #e08e5d
+whites:         --------    #f2f4f1
+low contrast dark text:     #c6b2b2
 
 Hero Main Text- 48px extra-bold
 Hero Secondary text, Header Link Text- 18px
@@ -15,10 +16,11 @@ Quote text- 36px light italic
 
 */
 * {
-    font-family: 'Hero New', sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body {
+    color: #f2f4f1;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -32,14 +34,14 @@ ul {
 
 a {
     text-decoration: none;
-    color: #f2f4f1;
+    color: #c6b2b2;
 }
 
 .container-main {
     background-color: #302d2e;
     display: flex;
     flex-direction: column;
-    padding: 16px 128px;
+    padding: 8px 208px;
 }
 
 .header {
@@ -54,9 +56,40 @@ a {
 }
 
 .header-nav {
-
+    font-size: 18px;
+    display: flex;
+    gap: 36px;
 }
 
 .content-main {
     display: flex;
+}
+
+.content-main-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 380px;
+}
+
+.content-main-title {
+    color: #f2f4f1;
+    font-size: 48px;
+    font-weight: extra-bold;
+    margin-bottom: -16px;
+}
+
+.content-main-text {
+    color: #c6b2b2;
+}
+
+.content-main-button {
+    background-color: #da5653;
+    border: solid 2px #da5653;
+    border-radius: 8px;
+    box-shadow: 6px 6px 6px #00000066;
+    color: #f2f4f1;
+    width: 128px;
+    padding: 8px 16px;
+    font-size: 16px;
 }
