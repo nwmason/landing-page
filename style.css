@@ -1,0 +1,62 @@
+/* Colors and font styles
+
+dark bg:        #302d2e
+dark accent:    #b09070
+main color:     #da5653
+light accent:   #e08e5d
+whites:         #f2f4f1
+
+Hero Main Text- 48px extra-bold
+Hero Secondary text, Header Link Text- 18px
+Header Logo Text- 24px
+
+Information Header text- 26px extra-bold
+Quote text- 36px light italic
+
+*/
+* {
+    font-family: 'Hero New', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #f2f4f1;
+}
+
+.container-main {
+    background-color: #302d2e;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 128px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo-text {
+    color: #f2f4f1;
+    font-size: 24px;
+}
+
+.header-nav {
+
+}
+
+.content-main {
+    display: flex;
+}
