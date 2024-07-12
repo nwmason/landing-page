@@ -36,11 +36,23 @@ a {
     color: #c6b2b2;
 }
 
+/* 
+stole this from stack overflow
+wanted a box shadow over the first div without being ruined
+by adding a bg color to the second
+idk man it works i guess
+*/
+#first{
+    position:relative;
+    z-index:2;
+}
+
 .container-main {
     background-color: #302d2e;
     display: flex;
     flex-direction: column;
     padding: 8px 256px;
+    box-shadow: 0 8px 12px 8px #0000003a;
 }
 
 .header {
@@ -78,7 +90,7 @@ a {
 .content-main-title {
     color: #f2f4f1;
     font-size: 48px;
-    font-weight: extra-bold;
+    font-weight: bolder;
     margin-bottom: -48px;
 }
 
@@ -110,5 +122,47 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 8px 256px;
+    padding: 32px 64px;
+    background-color: #f2f4f1;
+}
+
+.gallery-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 128px;
+    gap: 64px;
+}
+
+.gallery-card {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px 16px;
+}
+
+.gallery-card-image {
+    width: 280px;
+    height: 280px;
+    border: solid 4px #e08e5d;
+    border-radius: 64px;
+    box-shadow: 0px 4px 4px 4px #00000077;
+    flex: none;
+}
+
+.gallery-card-text {
+    color: #302d2e;
+    -webkit-flow-into: 17px;
+    font-weight: lighter;
+    flex: 1;
+    width: 240px;
+    text-align: center;
+}
+
+.quote-container {
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 196px;
 }
