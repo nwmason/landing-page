@@ -30,6 +30,10 @@ a {
     color: #c6b2b2;
 }
 
+a:hover {
+    color: #da5653;
+}
+
 /* 
 stole this from stack overflow
 wanted a box shadow over the first div without being ruined
@@ -77,6 +81,7 @@ idk man it works i guess
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    flex-shrink: 0;
     width: 480px;
     gap: 32px;
 }
@@ -103,6 +108,11 @@ idk man it works i guess
     padding: 8px 16px;
     font-size: 20px;
     font-weight: bold;
+}
+
+.content-main-button:hover {
+    background-color: #00000033;
+    cursor: grab;
 }
 
 .content-main-image {
@@ -141,8 +151,8 @@ idk man it works i guess
 .gallery-card-image {
     width: 280px;
     height: 280px;
-    border: solid 4px #e08e5d;
-    border-radius: 64px;
+    border: solid 3px #e08e5d;
+    border-radius: 64px / 16px;
     box-shadow: 0px 4px 4px 4px #302d2e33;
     flex: none;
 }
@@ -225,6 +235,11 @@ idk man it works i guess
     height: 64px;
     width: 196px;
     padding: 12px;
+}
+
+.action-button:hover {
+    background-color: #00000033;
+    cursor: grab;
 }
 
 .footer {
