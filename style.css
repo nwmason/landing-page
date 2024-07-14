@@ -75,12 +75,21 @@ idk man it works i guess
     font-size: 22px;
     border-radius: 16px;
     padding: 6px 14px;
+    transition: 0.2s;
 }
 
 .nav-button:hover {
     box-shadow: 1px 1px 6px 4px #00000077,
     -0.5px -0.5px 6px 4px #ffffff22;
+    border: 2px solid #00000028;
+    color: #da5653c6;
     cursor: pointer;
+}
+
+.nav-button:active {
+    box-shadow: 1px 1px 6px 4px #0000005f,
+    -0.5px -0.5px 6px 4px #ffffff22;
+
 }
 
 .content-main {
@@ -122,12 +131,18 @@ idk man it works i guess
     padding: 8px 16px;
     font-size: 20px;
     font-weight: bold;
+    transition: background-color 0.5s,
+        transform 0.1s;
 }
 
 .content-main-button:hover {
-    background-color: #00000033;
+    background-color: #00000011;
     color: #da5653;
     cursor: pointer;
+}
+
+.content-main-button:active {
+    transform: translateY(2px);
 }
 
 .content-main-image {
@@ -253,11 +268,17 @@ idk man it works i guess
     height: 64px;
     width: 196px;
     padding: 12px;
+    transition: background-color 0.5s,
+        transform 0.1s;
 }
 
 .action-button:hover {
     background-color: #00000033;
     cursor: pointer;
+}
+
+.action-button:active {
+    transform: translateY(2px);
 }
 
 .footer {
