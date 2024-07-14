@@ -65,9 +65,21 @@ idk man it works i guess
 }
 
 .header-nav {
-    font-size: 18px;
     display: flex;
     gap: 36px;
+}
+
+.nav-button {
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 24px;
+    border-radius: 16px;
+}
+
+.nav-button:hover {
+    box-shadow: 3px 3px 6px 4px #00000066,
+    -3px -3px 6px 4px #ffffff20;
+    cursor: pointer;
 }
 
 .content-main {
@@ -112,14 +124,15 @@ idk man it works i guess
 
 .content-main-button:hover {
     background-color: #00000033;
-    cursor: grab;
+    cursor: pointer;
 }
 
 .content-main-image {
     max-width: 640px;
     max-height: 460px;
     flex: 0 1 0;
-    border: solid 2px #b09070;
+    border: solid 2px;
+    border-color: to-linear;
     border-radius: 32px;
     box-shadow: 12px 12px 12px 12px #00000066;
 }
@@ -239,7 +252,7 @@ idk man it works i guess
 
 .action-button:hover {
     background-color: #00000033;
-    cursor: grab;
+    cursor: pointer;
 }
 
 .footer {
