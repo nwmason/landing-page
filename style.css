@@ -80,7 +80,7 @@ idk man it works i guess
 
 .nav-button:hover {
     box-shadow: 1px 1px 6px 4px #00000077,
-    -0.5px -0.5px 6px 4px #ffffff22;
+    0 0 6px 4px #ffffff22;
     border: 2px solid #00000028;
     color: #da5653c6;
     cursor: pointer;
@@ -88,8 +88,8 @@ idk man it works i guess
 
 .nav-button:active {
     box-shadow: 1px 1px 6px 4px #0000005f,
-    -0.5px -0.5px 6px 4px #ffffff22;
-
+    0 0 6px 4px #ffffff22;
+    border: 2px solid #00000018;
 }
 
 .content-main {
@@ -139,6 +139,7 @@ idk man it works i guess
     background-color: #00000011;
     color: #da5653;
     cursor: pointer;
+    transform: translateY(-3px);
 }
 
 .content-main-button:active {
@@ -166,7 +167,7 @@ idk man it works i guess
     display: flex;
     flex-wrap: wrap;
     padding: 96px;
-    gap: 64px;
+    gap: 16px 8px;
 }
 
 .gallery-card {
@@ -175,19 +176,31 @@ idk man it works i guess
     flex: auto;
     align-items: center;
     justify-content: flex-start;
-    gap: 24px 16px;
+    gap: 24px 12px;
 }
 
 .gallery-card-image {
     width: 320px;
     height: 400px;
-
+    border: 1px solid #302d2e44;
     border-radius: 64px / 16px;
     box-shadow: 0px 4px 4px 4px #302d2e33,
-    0px 1px 2px 4px #e08e5d88;
+    0px 1px 8px 4px #e08e5d88;
     flex: none;
     object-fit: cover;
     background-color: #302d2e;
+    transition: 0.3s;
+}
+
+.gallery-card-image:hover {
+    width: 400px;
+    height: 480px;
+    box-shadow: 0px 4px 32px 4px #302d2e66,
+    0px 1px 8px 4px #e08e5d44;
+    transform: translateY(-32px);
+    margin-bottom: -32px;
+    margin-left: -16px;
+    margin-right: -16px;
 }
 
 .gallery-card-text {
@@ -275,6 +288,7 @@ idk man it works i guess
 .action-button:hover {
     background-color: #00000033;
     cursor: pointer;
+    transform: translateY(-2px);
 }
 
 .action-button:active {
